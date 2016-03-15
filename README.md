@@ -1,4 +1,4 @@
-# Lock-Library
+# FIRE-LOCK (Fade-In Re-authentication Lock)
 
 The library provides locks interfaces to conveniently and securely re-authenticate users. The library provides four interfaces with each providing a different screen transparency (**fadeInDelay**) and delay in the appearance of the lock (**lockDelay**). The four interfaces provided by the library are:
 

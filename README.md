@@ -4,7 +4,7 @@ The library provides locks interfaces to conveniently and securely re-authentica
 
 1. **imm-trans-imm-lock**- Remains transparent, No fadeInDelay, No lockDelay
 2. **imm-dark-imm-lock**- Turns dark immediately, No fadeInDelay, No lockDelay
-3. **grad-dark-imm-lock**- Turns dark gradually, has a fadeInDelay (default- 8 seconds), no lockDelay
+3. **grad-dark-imm-lock**- Turns dark gradually, has a fadeInDelay (default- 8 seconds), No lockDelay
 4. **grad-dark-grad-lock**- Turns dark gradually, has a fadeInDelay (default- 8 seconds), has a lockDelay (default- 4 seconds)
 
 <img src="https://github.com/lalitagarwal/Lock-Library/raw/master/images/Imm-Trans-PAT.gif" height="300px" />   |  <img src="https://github.com/lalitagarwal/Lock-Library/raw/master/images/Imm-Dark-PIN.gif" height="300px" /> | <img src="https://github.com/lalitagarwal/Lock-Library/raw/master/images/Grad-Dark-PIN.gif" height="300px" /> | <img src="https://github.com/lalitagarwal/Lock-Library/raw/master/images/Grad-Dark-Grad-Lock-PAT.gif" height="300px" />

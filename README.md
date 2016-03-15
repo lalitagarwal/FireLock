@@ -2,10 +2,10 @@
 
 The library provides locks interfaces to conveniently and securely re-authenticate users. The library provides four interfaces with each providing a different screen transparency (**fadeInDelay**) and delay in the appearance of the lock (**lockDelay**). The four interfaces provided by the library are:
 
-1. **imm-trans-imm-lock**- Remains transparent, No fadeInDelay, No lock delay
-2. **imm-dark-imm-lock**- Turns dark immediately, No fadeInDelay, No lock delay
-3. **grad-dark-imm-lock**- Turns dark gradually, fadeInDelay (default- 8 seconds), no lock delay
-4. **grad-dark-grad-lock**- Turns dark gradually, fadeInDelay (default- 8 seconds), lock delay (default- 4 seconds)
+1. **imm-trans-imm-lock**- Remains transparent, No fadeInDelay, No lockDelay
+2. **imm-dark-imm-lock**- Turns dark immediately, No fadeInDelay, No lockDelay
+3. **grad-dark-imm-lock**- Turns dark gradually, has a fadeInDelay (default- 8 seconds), no lockDelay
+4. **grad-dark-grad-lock**- Turns dark gradually, has a fadeInDelay (default- 8 seconds), has a lockDelay (default- 4 seconds)
 
 <img src="https://github.com/lalitagarwal/Lock-Library/raw/master/images/Imm-Trans-PAT.gif" height="300px" />   |  <img src="https://github.com/lalitagarwal/Lock-Library/raw/master/images/Imm-Dark-PIN.gif" height="300px" /> | <img src="https://github.com/lalitagarwal/Lock-Library/raw/master/images/Grad-Dark-PIN.gif" height="300px" /> | <img src="https://github.com/lalitagarwal/Lock-Library/raw/master/images/Grad-Dark-Grad-Lock-PAT.gif" height="300px" />
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:

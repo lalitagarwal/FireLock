@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/transp" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="430dp"
+        android:layout_height="730dp"
+        android:theme="@style/My_Theme"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/bgview"
+        android:background="@color/transp"
+        >
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:theme="@style/My_Theme"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/lockview"
+            >
+
+        <TextView
+            android:id="@+id/alp_42447968_textview_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textIsSelectable="true"
+            android:visibility="gone"/>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+  <haibison.android.lockpattern.widget.LockPatternView
+            android:id="@+id/alp_42447968_view_lock_pattern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+  </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/alp_42447968_viewgroup_footer"
+                style="?attr/alp_42447968_button_bar_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!-- A separator view -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/alp_42447968_separator_size"/>
+
+                <LinearLayout
+                    style="?attr/alp_42447968_button_bar_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/alp_42447968_button_cancel"
+                        style="?attr/alp_42447968_button_bar_button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@android:string/cancel"
+                        android:visibility="gone"/>
+
+                    <Button
+                        android:id="@+id/alp_42447968_button_confirm"
+                        style="?attr/alp_42447968_button_bar_button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:text="@string/alp_42447968_cmd_continue"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/alp_42447968_view_group_progress_bar"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

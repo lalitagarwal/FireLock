@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lagarwal.lock_library">
+
+    <!--<supports-screens
+        android:resizeable="true"
+        android:smallScreens=["true" | "false"]
+        android:normalScreens=["true" | "false"]
+        android:largeScreens=["true" | "false"]
+        android:xlargeScreens=["true" | "false"]
+        android:anyDensity=["true" | "false"]
+        android:requiresSmallestWidthDp="integer"
+        android:compatibleWidthLimitDp="integer"
+        android:largestWidthLimitDp="integer"/>-->
+
+    <supports-screens
+        android:resizeable="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:anyDensity="true"/>
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".authentication.patternLock.Webview"
+            android:label="@string/title_activity_feedback" >
+        </activity>
+        <activity
+            android:name=".authentication.pinLock.Webview_Pin"
+            android:label="@string/title_activity_feedback" >
+        </activity>
+        <activity
+            android:name=".authentication.pinLock.PinLock"
+            android:label="Pin Lock"
+            android:theme="@style/My_Theme2">
+        </activity>
+        <activity
+            android:name=".authentication.MainActivity"
+            android:label="@string/title_activity_feedback" >
+        </activity>
+        <activity
+            android:name=".authentication.pinLock.MainActivity_Pin"
+            android:label="@string/title_activity_feedback" >
+
+        </activity>
+        <activity
+            android:name="haibison.android.lockpattern.LockPatternActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout"
+            android:screenOrientation="user"
+            android:theme="@style/My_Theme" >
+            <intent-filter>
+                <action android:name="LockPatternActivity.ACTION_COMPARE_PATTERN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".authentication.patternLock.PatternLock"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout"
+            android:screenOrientation="user"
+            android:theme="@style/My_Theme" >
+            <intent-filter>
+                <action android:name="LockPatternActivity.ACTION_COMPARE_PATTERN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".authentication.patternLock.GetPattern"
+            android:label="@string/title_activity_feedback" >
+        </activity>
+
+    </application>
+
+</manifest>

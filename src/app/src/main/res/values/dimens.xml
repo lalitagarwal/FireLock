@@ -1,0 +1,28 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="locker_button_text_size">33sp</dimen>
+
+    <dimen name="paddingLeftSmall">10dp</dimen>
+    <dimen name="paddingRightSmall">10dp</dimen>
+    <dimen name="paddingTopSmall">50dp</dimen>
+
+    <dimen name="paddingLeftSmallLand">20dp</dimen>
+    <dimen name="paddingRightSmallLand">20dp</dimen>
+    <dimen name="paddingTopSmallLand">0dp</dimen>
+
+    <dimen name="paddingLeftNormal">30dp</dimen>
+    <dimen name="paddingRightNormal">30dp</dimen>
+    <dimen name="paddingTopNormal">150dp</dimen>
+
+    <dimen name="paddingLeftNormalLand">120dp</dimen>
+    <dimen name="paddingRightNormalLand">120dp</dimen>
+    <dimen name="paddingTopNormalLand">20dp</dimen>
+
+    <dimen name="paddingLeftXLarge">30dp</dimen>
+    <dimen name="paddingRightXLarge">30dp</dimen>
+    <dimen name="paddingTopXLarge">150dp</dimen>
+
+</resources>

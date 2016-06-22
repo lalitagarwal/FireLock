@@ -1,0 +1,224 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/paddingLeftSmall"
+    android:paddingRight="@dimen/paddingRightSmall"
+    android:paddingTop="@dimen/paddingTopSmall"
+    android:id="@+id/pin_lock"
+    tools:context="com.example.lagarwal.transparent_activity3.PinLock">
+    <!-- android:background="@color/transp" -->
+
+    <EditText
+        android:id="@+id/editDig"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:gravity="center_horizontal"
+        >
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittext_layout"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        >
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/userInput"
+                android:gravity="center"
+                android:layout_gravity="top|center"
+                android:textColor="@color/text_color_white"
+                android:password="true"
+                android:textSize="30dp"
+                />
+            <ImageButton
+                android:id="@+id/numlock_bDelete"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:padding="0px"
+                android:contentDescription="@string/cross_icon"
+                style="@style/Button_Style"
+                android:onClick="btnClickHandler"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_action_delete"
+                android:layout_gravity="right|top"
+                />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/numpad_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:rowCount="4"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        tools:context="com.example.lagarwal.transparent_activity.NumberLock">
+
+        <!-- <com.andexert.library.RippleView
+            rv_centered="true"> -->
+
+        <Button
+            android:id="@+id/numlock_b1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0px"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="@string/num1"
+            android:textSize="@dimen/locker_button_text_size"
+            style="@style/Button_Style"
+            android:onClick="btnClickHandler"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/numlock_b2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0px"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="@string/num2"
+            android:textSize="@dimen/locker_button_text_size"
+            style="@style/Button_Style"
+            android:onClick="btnClickHandler"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/numlock_b3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="@string/num3"
+            android:textSize="@dimen/locker_button_text_size"
+            style="@style/Button_Style"
+            android:onClick="btnClickHandler"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/numlock_b4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="@string/num4"
+            android:textSize="@dimen/locker_button_text_size"
+            style="@style/Button_Style"
+            android:onClick="btnClickHandler"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/numlock_b5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="@string/num5"
+            android:textSize="@dimen/locker_button_text_size"
+            style="@style/Button_Style"
+            android:onClick="btnClickHandler"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/numlock_b6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="@string/num6"
+            android:textSize="@dimen/locker_button_text_size"
+            style="@style/Button_Style"
+            android:onClick="btnClickHandler"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/numlock_b7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="@string/num7"
+            android:textSize="@dimen/locker_button_text_size"
+            style="@style/Button_Style"
+            android:onClick="btnClickHandler"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/numlock_b8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="@string/num8"
+            android:textSize="@dimen/locker_button_text_size"
+            style="@style/Button_Style"
+            android:onClick="btnClickHandler"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/numlock_b9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="@string/num9"
+            android:textSize="@dimen/locker_button_text_size"
+            style="@style/Button_Style"
+            android:onClick="btnClickHandler"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/numlock_b0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="0px"
+            android:text="@string/num0"
+            android:textSize="@dimen/locker_button_text_size"
+            style="@style/Button_Style"
+            android:onClick="btnClickHandler"
+            android:layout_gravity="center"
+            android:layout_columnSpan="1"
+            android:layout_column="1"/>
+
+        <ImageButton
+            android:id="@+id/numlock_bAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="0px"
+            android:contentDescription="@string/tick_icon"
+            android:src="@drawable/ic_action_accept"
+            style="@style/Button_Style"
+            android:onClick="btnClickHandler"
+            android:layout_gravity="center|fill"
+            android:layout_columnSpan="1"
+            android:layout_column="2" />
+
+    </GridLayout>
+</LinearLayout>

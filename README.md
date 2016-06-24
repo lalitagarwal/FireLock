@@ -28,4 +28,5 @@ pinLock.putExtra("lockDelay", <seconds>); //This is optional, default is 4 sec
 ```
 ---
 
-### Future Work
+### Demo
+We provide an implementation of FireLock with [Itus](https://crysp.uwaterloo.ca/software/itus/), which is an Android library authenticating users using touch-based and keystroke-based classifiers. We integrate both FireLock and Itus with an open-source messaging application called [Signal](https://github.com/WhisperSystems/Signal-Android). The demo re-authenticates the users based on the classification score as provided by Itus. In case of a low score, the re-authentication prompt is activated whenever the user presses the send button to send a text message. The user is unable to send the message unless they re-authenticate themselves by entering the correct pass-code.
